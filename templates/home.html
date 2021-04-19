@@ -11,6 +11,12 @@
 <body>
     {% block content%}
     <h1>Hello World</h1>
+    <h1>Message Board</h1>
+    <ul>
+        {% for post in post_list %}
+        <li>{{post}}</li>
+        {% endfor %}
+    </ul>
     {% endblock content %}
 </body>
 </html>
