@@ -29,6 +29,11 @@ p {
     padding: 0 20px;
 }
 
+.post {
+    margin: 10px 0;
+
+}
+
 #navbar {
     background: #333;
     color: #fff;

@@ -10,13 +10,13 @@
 </head>
 <body>
     {% block content%}
-    <h1>Hello World</h1>
     <h1>Message Board</h1>
-    <ul>
-        {% for post in post_list %}
-        <li>{{post}}</li>
-        {% endfor %}
-    </ul>
+    {% for post in post_list %}
+    <div class="post">
+        <h2><a href="">{{post.title}}</a></h2>
+        <p>{{post.text}}</p>
+    </div>
+    {% endfor %}
     {% endblock content %}
 </body>
 </html>
