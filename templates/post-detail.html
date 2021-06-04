@@ -15,6 +15,8 @@
             </h2>
             <p>{{ postd.text }}</p>
         </div>
+        <p><a href = "{% url 'post_edit' postd.pk %}"> Edit Post </a></p>
+        <p><a href = "{% url 'page_delete' postd.pk %}"> Delete Post </a></p>
     {%endblock content%}
 </body>
 </html>
