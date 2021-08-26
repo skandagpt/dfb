@@ -32,3 +32,4 @@ class BlogDeleteView(DeleteView):
     model=Post
     template_name = 'page_delete.html'
     success_url = reverse_lazy('home')
+    
